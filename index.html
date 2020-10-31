@@ -58,36 +58,11 @@
       </div>
     </div>
   </div>
-  <!-- <div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
-  <script>
-    let prev = document.getElementById("prev");
-    let next = document.getElementById("next");
-    let slides = document.getElementsByClassName("slide");
-    slides = Array.from(slides);
-
-    prev.addEventListener("click", () => {
-      slides.forEach(item => {
-        item.classList.toggle("disabled");
-      });
-    });
-
-    next.addEventListener("click", () => {
-      slides.forEach(item => {
-        item.classList.toggle("disabled");
-      })
-    });
-
-    document.onkeydown = (e) => {
-      if (e.keyCode === 37 || e.keyCode === 39) {
-        slides.forEach(item => {
-          item.classList.toggle("disabled");
-        });
-      }
-    };
-  </script>
+    Coded by <a href="https://github.com/Rem0ld">Pierre Lovergne</a>.
+  </div>
+  <script src="./script.js"></script>
 </body>
 
 </html>
